@@ -1,31 +1,8 @@
-Hi,
+For Windows 10 1903
 
-Since I wrote the first versions of conversion script (v0.1 and 0.2) back when vista was released and the sound-issue first surfaced, I've always known it was not finished. I did not have much time to finish it, but it seemed to be working quite well as it was, so I posted it over at the 3dRealms forum, and had no time to look back.
-
-Lately I found some time and looked at it again, and I also checked the forums to see what happened there and found the current state of affairs :o (March-09). Since the release of v0.2, June '07 some issues came up with it (of course!), main issues being the lack of support for mods and leaving the data in extracted state without repacking it.
-
-Crimson Behelit and MaddieMan did a great job, picking it up where I left it: releasing v0.3 and trying to tackle the main issues. Some good finds where done, but also some new complications crept in. The script was over-complicated and over-informative, I wanted to clean that up and tackle some of the remaining issues.
-
-So I decided to pick it up again and release v0.5beta (probably few more releases will follow). Stay tuned in the forums mentioned for updates and workarounds.
-If you have any issues or any questions and remarks please post them in the forums, you can also go there to look for updates.
-
-http://www.alanwake.com/forum/showthread.php?t=1729  I will post any updates there.
-http://forums.3drealms.com/vb/showthread.php?t=27985
-
-Best regards and Please post your results!
-
-Darkje
-
-------
-Read Me! -Ultimate Max Payne(1) Vista/Win7 Sound Fix- v1.0 updated 03-May-09
-------
-If you install Max Payne (1) on Vista or Windows7 you will probably notice that most music, intro sound, cut-scene talks and many of the original in game sounds are missing. This patch will fix that, by converting the original sounds to a format that does play right in Vista/Windows7. Mods can also be converted and played with sound now.
-
-Usage:
-Unpack the maxpayne_soundpatch.rar file in your game directory and click MaxBatch(.bat). A command window will pop up, giving you choice of the options explained below, depending on what it finds in the game directory. You can also stop at any stage. Upon exit the script will create a shortcut on your desktop to itself, so you can easily start it again any time. If you want to restore or convert more mods you added later on, just run the script again. It's best to start with an unconverted game and unconverted mods because the script will remember what is converted or not, by looking at the backups it made. If it does not find any backups it will presume an unconverted game/mod. (* converting an already converted mod or game again won't damage it, but is no good for the restore part). On vista you may need an account with admin rights, to be able to copy the files to the game directory.
-
-Location of game directory:
-The Location of the game directory depends on how you first installed the game. If you used the original CD and did not change the default install path, it is probably located in 'C:\Program Files\MaxPayne\' or 'C:\Program Files (x86)\MaxPayne\'. If you installed the game from Steam, it should be located in 'C:\Program Files\Steam\steamapps\common\max payne' or 'C:\Program Files (x86)\Steam\steamapps\common\max payne'. Make sure you copy all patch files there, if you get messages saying you need permission, please allow them, so the script files are all copied there. As of version v0.85 the script will run in any directory, even if it's protected by vista's UAC. The script will prompt for elevation once at start-up if needed in any phase.
+1.Put all the files into the C:\Program Files (x86)\Steam\steamapps\common\Max Payne
+2.Run the MaxBatch bat file
+3.Use any of the options below,but for sound just launch the C one
 
 Options:
 When you run the script you will presented with some of the following options, depending on status found.
@@ -47,180 +24,8 @@ When you run the script you will presented with some of the following options, d
 [E] - End. This will do guess what .
 
 
-Possible issues:
-- I've sometimes seen a "file in use/directory not empty" error popping up in the conversion phase, if this happens please restore the file you where processing and then exit the script. Edit maxbatch.bat at line 10 where it says "set var_Delay=5" and try a higher number there like "set var_Delay=10", and convert again, that should solve it.
-- Install issues, for easy step by step guide look here:
 
-    Easy step guide to fully installing the game with sound patch:
-    Installing the sound patch on the Steam Game - http://www.alanwake.com/forum/showthread.php?p=38480
-    Installing the sound patch on the CD Game - http://www.alanwake.com/forum/showthread.php?p=38501
-
-Files needed and Errors reported:
-The patch will check if any of the needed files are missing. If something is possibly wrong you will get a message 'Possible problem(s) detected, use debug level 1 for more info'. Doing so will report several possible issues, and details what file(s) are missing.:
-- If the files needed by the script are there. If not phases of the script may fail. Files required to pass this phase are: rasmaker.exe. rl.dll, shortcut.exe and sox.exe.
-- If files needed for converting a basic game are there. If not conversion may fail. Files required to pass this phase are: x_data.ras, x_music.ras and a x_(language).ras file.
-- If a game .exe is found. If not the launch option will not work. File required to pass this phase is: maxpayne.exe
-- If all additional files required to run the game are found. If this is not the case you don't have the same files I got when I installed from the original CD and also steam. This may or may not be an issue. Files required to pass this phase are: e2driver/e2_d3d8_driver_mfc.dll, movies/intro.mpg, e2mfc.dll, grphmfc.dll, maxpayne.exe, mfc42.dll, msvcirt.dll, msvcp60.dll, msvcrt.dll, rlmfc.dll, sndmfc.dll, x_data.ras, x_level1.ras, x_level2.ras, x_level3.ras, x_music.ras and a x_(language).ras file
-- If a x_(language).ras file was found its name is displayed. If not this is a problem. You need one!
-If any file needed is missing, I suggest replacing it by reinstalling the game or verifying it from steam or otherwise. Not doing so will prevent certain parts of the script or game to function. Make sure you don't have directories named 'backup' or 'tmp' in your game directory, the script will use those along the way. Also please don't store any files in these directories yourself.
-
-Language file:
-You need one x_(language).ras file. Where(language) is the language the game was installed in, I found English, Italian and Russian existing, but there are probably more. Please only use 1 language file at the time; I don't know what happens with 2 or more.
-
-Tips for debug option:
-Be aware that debugging a large file, like the game itself, can take some time, since it comments (and waits for 1 sec. at level2) after each sound, and there are hundreds of sounds. Try it on a small mod if you just want to look what it does. You can speed it up by pressing the space-bar or if you can't wait for it to finish, you can stop the debugging by terminating the script with Ctrl+C, if you do please manually delete the 'tmp' directory and use the script to restore the backups.
-
-Mods:
-Mods are modifications for the original game. Some are minor adaptions, others are so extensive that it's really a completely different game. You can also install mods on the steam game. There are so many mods around that I never tested all of them, but converting should not be a problem. Mods are usually installed by placing a .mpm file in the game directory. If you want to convert a mod's sounds, install the mod as instructed and restart the script or detect again.
-
-How I tested:
-I myself tested it with the CD game with maxpayne v1.05 update patch on vista x64 and Windows7 build 7000&7100(installed in default location) with 2 mods: katana and kungfu_30 and in both I can hear more sound with the conversion. I also tested with the Steam version of the game lately, and found no problems.
-
-How does the script work:
-Basically the script is a DOS batchfile that calls existing helper applications to convert the game or do other tasks. Since conception of the fix, it has grown from a few basic commands typed at the commandline, to a quite complex batchfile of over a 1000 lines, that checks for many possible scenarios and does the hard stuff for you! Batchfiles are textfiles containing a series of commands you would otherwise type at the commandline. They can be opened in a basic editor like notepad, so if you are interested in it's inner workings you can review it that way. The elevate.vbs included in the last few versions is a small VB script that opens an elevated command prompt and restarts the script in there. It can also be opened with a text editor.
-
-
-------
-UPDATES
-------
-V1.12, 21-Nov-10
-- On the game conversion the size of the result is now checked, if conversion failed backups are restored (if only one fails, all game files are restored, so it's fresh afterwards).
-- Large working and finished messages on the game conversion section, for some people missed the fact the script was still working after the first file, where three files had to be done.- Fixes need for edit if converting cd install of languages other than english.
-- Detection and removal of previously failed conversion attempts is done. ie. tmp removed and backups synced.
-- If tmp is not properly emptied between conversion files, - sometimes it  happens the os reported file in use- , the script will alert and retry until the files are released. 
-
-V1.11, 25-Nov-09
-Some small bugs where found, this fixes it. 
-
-- almost completely rewritten/redisgned.
-V1.1, 22-Nov-09
-This one focusus on better handling of mods. I separated the game conversion and mod conversion in to their own screens, the restore screen of v1.0 became obsolete by this. 
-
-- almost completely rewritten/redisgned.
-- mods categorized in 3 types, new, converted and excluded.
-- mods failing conversion auto excluded.
-- where it used to handle all mods in one go, it can now also handle individual files.
-- fixed qouting on the mod filenames, previous version crashed if it contained spaces or brackets.
-
-
-V1.0 Final, 03-May-09
-
-OK people, here is my final one! This should do it all, and unless something major comes up with it I plan no further updates in the near future.
-- Colors indicating status, green screen all ok, red screen possible problem(s)
-- Separate elevate.vbs no longer needed, the script will auto-generate one in %temp% if it needs it.
-- Converted file check if conversion worked by comparing size to original, if conversion results in equal size or zero size file, it was not needed, or the file was already converted, or conversion failed. Backups are restored.
-- Debug levels 3&4 removed, where only used during beta phase.
-- Shortcut no longer placed on desktop, but in startmenu/all programs.
-- Many small tweaks. 
-
-beta v0.89, 27-Apr-09:
-- In the main screen the backup files are no longer listed, cleaning it up.
-- Separate Restore menu. Backups are now listed here. Game and mods can be restored independantly.
-- The detection routines are even more extensive now, making the program more robust over all in case of problems. Now it will report exactly what file(s) are missing, if such a problem comes up.
-- Refined dialogs on many items.
-
-beta v0.88, 25-Apr-09:
-- fixed: In the Steam client, if you do a "verify integrity of game cache" it will restore the converted files (like it should), but it seems backups the script made remain, causing the script to think the game was already converted. Now it detects this situation where the main files and backups are similar size and synchronizes the backup to reflect that the script is now dealing with an unconverted game again.
-- Some minor tweaks all over.
-
-beta v0.87, 24-Apr-09:
-- fixed: Elevation (elevate.vbs) would not work right with Windows7 (build 7000).
-- fixed: A minor bug was reported in debug level1, a missing label caused a label not found error and caused an informative text not to be displayed.
-
-beta v0.86, 23-Apr-09:
-- Hehe, did it again :O , another minor update needed just after release, to fix that the [L][S] options appeared in different order in the list, compared to the input prompt below. (Can still be seen in the screens). Don't know why I did not spot that earlier, but here is a new revision to fix it.
-
-beta v0.85, 23-Apr-09:
-Two days earlier than promised, here is v0.85. I'm feeling this is a major step in the right direction, because this version can run in vista-UAC protected directories, where the game usually got installed. This eliminates the need for fixes and workarounds and it is no longer required to install or move the game in an alternate directory. I hope it will solve most problems. Had to add 2 extra (very small) files to this version, for the shortcut and elevation functions.
-
-- Script will prompt for elevation if restricted by vista-UAC at current location. (You do need an account with admin rights to be able to allow this, I think)
-- Script will create shortcut on desktop on exit, if no shortcut exists yet.
-- [S]tart analysis again option added. Useful to rescan the found files.
-- [L]aunch game option added. Will attempt to launch game.
-- [F]ix option removed. No need for fixes anymore!
-- Script will return to main menu after convert or restore options, so you can launch or do other tasks.
-- Yet another debug level added: level 1, verbose mode. Other levels shifted up.
-- Found a way to suppress sox error messages, used at debug levels 0 and 1 for cleaner display.
-- Rasmaker extract/pack comments also suppressed for cleaner display.
-- Script comments added and script cleaned.
-- Debug level2 bug removed.
-- Analysis phase extended.
-- Status messages during conversion/restore phases.
-- Fixed "fresh game" message when no game at all was there.
-- Readme updated.
-
-beta v0.81, 17-Apr-09:
-- Sorry, as always I seem to need an extra update to fix minor issues with dialog and layout.
-- Also an earlier fixed bug of missing quotes did occur again under circumstances, fixed again.
-- One more debug level. Level 3, combining level 1&2
-
-beta v0.8, 17-Apr-09:
-- Added testing for UAC, and offer solution No.1 through a new [F]ix option if UAC is limiting the script.
-- Analysis now showing current path, so you know where the script is running from.
-- Debugging now has 3 levels (0,1,2), 0 is off, 1 is verbose sound conversion phase and 2 is also echo script.
-
-beta v0.71, 16-Apr-09:
-- Fixed the debug-bug. (Debug could not be switched on/off in the scenario of a clean game and no mods)
-- Added to debugging: the script itself will also show in debug mode. This can be useful for finding why and where there is a problem with the script.
-
-beta v0.7, 15-Apr-09:
-- Approaching final, sanitized script again after lots of changes under the hood.
-- Debug option added, switches sox to verbose, for more info in conversion phase, see above description at options!
-- More small dialog tweaks and cosmetic changes.
-
-beta v0.63, 15-Apr-09:
-Another minor update.
-- Extended dialog and menus so you can also convert mods only now, without having a converted game.
-- Dialog changes, now the script calls the files converted and unconverted, instead of backups. (Still depends on detection of the backups).
-- Minor cosmetic changes.
-
-beta 0.61, 13-Apr-09:
-Whoot so soon? Yes! Something terrible came up, a bug. Please use this version; all older versions have that bug.
-- Fixed: a nasty bug (in fact it was me forgetting to use quotes somewhere in the older parts of the script, very nasty ;)) It caused file names with a space in them to be skipped and lost in the conversion phase! (Only some sounds on some mods affected, not the game itself)
-
-beta 0.6, 13-Apr-09:
-Just 24h after v0.5 and I've done the fix on the parts that where bugging me ;), so here's my best version yet...
-- Implemented better handling of newly added mods. Now you can add new mods without restoring first!
-- Created dialog to show status, and menu's to interact
-
-beta 0.5, 12-Apr-09:
-- Removed the checks for files, now you just have to make sure yourself you have them in the game directory.
-- Removed most dialog, just run the script and wait for it to finish.
-- Removed the alternate path options, complicated things, no one used them anyway.
-- Removed path dependencies, path no longer specifically has to be c:\Maxpayne, any location will do.
-- Removed the need for more than one script.
-- Other languages besides English will also work now.
-- Simplified and cleaned the script.
-- Fixed unnecessary decompression of the level data.
-- Included mod conversion.
-- All files are repacked now, including mods.
-- Originals are kept, restoring is still possible. Just run script again, like before, also restores converted mods.
-- If you have multiple mods: all mods found in the game directory will be converted and backed up when the script is run. If you add unconverted mods later on, you will have to run the script twice, first to restore the already converted files back, and second to do the conversion of all ras and mod files again. You can have both converted and unconverted files in the game directory.
-- The script will perform a restore of the converted files if it detects the backup directory.
-
-beta v0.4, Jun. 07-Mar.09
-- Internal beta version named 0.4 after I discovered 0.3 was already used.
-
-beta v0.3, Aug. 08, by Crimson Behelit and Maddieman:
-- Added preliminary mod support.
-- Added repack of game data.
-
-beta v0.2, Jun. 07:
-- Original game only conversion script as posted at 3drealms.
-
-beta v0.1, Jun. 07:
-- Initial edition. Never released.
-
-------
-PICTURES
-------
-
-Posted some pictures of v1.0 here: http://nl.tinypic.com/useralbum.php?ua=0PT%2F7FMwgMnsnG2BlxiSFA%3D%3D
-
-------
-FILES INCLUDED
-------
-Elevation script based on Microsoft TechNet Elevation Powertoys example, adapted by me.
+Files:
 MaxBatch.bat
 maxpayne soundpatch(xxx).txt
 Rasmaker.exe
@@ -228,14 +33,5 @@ Rl.dll
 Shortcut.exe
 Sox.exe
 
-------
-Copyrights
-------
-Some files included and names used are © but included here for ease of use or readablility, I hope to satisfy their respective owners by mentioning:
-Max Payne, rasmaker.exe and rl.dll © 3dRealms/Remedy at http://www.3drealms.com/ and http://www.remedygames.com/
-Shortcut.exe © by Marty List at http://www.optimumx.com
-Sox.exe freeware from http://sox.sourceforge.net/
-Steam © Valve Corporation at http://www.valvesoftware.com
-Vista and Windows7 © Microsoft http://www.microsoft.com
-MaxBatch and other files included; freeware by me, Darkje ™
+Thanks to gimalaji_blake and Darkje Â™
 

@@ -13,6 +13,6 @@ To Fix the sound and limit FPS to 60:
 
 
 
-That's it enjoy the game,credit goes to Darkje for the sound fix and ThirteenAG for the wrapper creation.Thanks goes to gimalaji_blake for setting it up and configuring the wrapper to be regognized by the game and setiing the FPS limits.
+That's it enjoy the game,credit goes to Darkje for the sound fix and ThirteenAG for the wrapper creation.Thanks goes to gimalaji_blake for setting it up and configuring the wrapper to be recognized by the game and setiing the FPS limit.
 Enjoy!
 gimalaji_blake

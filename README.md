@@ -1,4 +1,4 @@
-# Max-Payne-Windows-10-fix
+# Max-Payne-Fix-Windows-10
 To Fix the sound and limit FPS to 60:
 
 0. Go to Control Panel>Programs>Programs and Features>Turn Windows Features on or off>Legacy Components>Enable Direct Play and .NET 3.5 Framework support

@@ -1,19 +1,18 @@
 # Max-Payne-Windows-10-fix
 To Fix the sound and limit FPS to 60:
 
-1) Put all the files into the C:\Program Files (x86)\Steam\steamapps\common\Max Payne
+0. Go to Control Panel>Programs>Programs and Features>Turn Windows Features on or off>Legacy Components>Enable Direct Play and .NET 3.5 Framework support
 
-2) Run the MaxBatch bat file
+1. Put all the files into the C:\Program Files (x86)\Steam\steamapps\common\Max Payne
 
-3) For sound fix just launch the C option and wait for the files to convert
+2. Run the MaxBatch bat file
 
-4) FPS fix just copy and paste the d3d8.dll into the C:\Program Files (x86)\Steam\steamapps\common\Max Payne directory
+3. For sound fix just launch the C option and wait for the files to convert
 
-Options:
-When you run the script you will presented with some of the following options, depending on status found.
-[C] - Convert game. This will convert the game .ras files that contain sounds. Backups are kept so you can restore later on.
-[M] - Convert mod(s). This will convert the mod .mpm files found. Backups are kept so you can restore later on.
-[E] - End. This will do guess what .
+4. Type E to exit the script.
 
 
-That's it enjoy the game,credit goes to Darkje for the sound fix and crosire for the wrapper creation. 
+
+That's it enjoy the game,credit goes to Darkje for the sound fix and ThirteenAG for the wrapper creation.Thanks goes to gimalaji_blake for setting it up and configuring the wrapper to be regognized by the game and setiing the FPS limits.
+Enjoy!
+gimalaji_blake

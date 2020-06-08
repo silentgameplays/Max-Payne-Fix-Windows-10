@@ -11,6 +11,8 @@ To Fix the sound and limit FPS to 60:
 
 4. Type E to exit the script.
 
+5. (Optional) To avoid seeing white texture shapes in game leave the Texture color depth at 16 bits and Antialiasing on off when configuring graphics options.
+
 
 
 That's it enjoy the game,credit goes to Darkje for the sound fix and ThirteenAG for the wrapper creation.Thanks goes to gimalaji_blake for setting it up and configuring the wrapper to be recognized by the game and setiing the FPS limit.

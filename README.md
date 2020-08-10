@@ -25,6 +25,14 @@ To Fix the sound and limit FPS to 60:
 * nightmare for Hard-Broiled mode
 * timedmode for New York Minute mode
 
+NB! This fix needs to be used on a clean/fresh version of Max Payne installed it will not work with a bunch of other stuff installed because of API conflicts(software layer),same as any other fix
+1. Uninstall Max Payne
+2. Delete the Max Payne folder in C:\Program Files (x86)\Steam\steamapps\common\
+3. Download all the files in the repo
+4. Copy Paste into C:\Program Files (x86)\Steam\steamapps\common\Max Payne
+4. Run the MaxBatch file again
+5. Press C wait for files to convert then E
+6. Launch game
 
 
 # Enjoy the game,credit goes to Darkje for the Sound Patch creation and ThirteenAG for the wrapper creation visit his website for more goodies:https://thirteenag.github.io/wfp!

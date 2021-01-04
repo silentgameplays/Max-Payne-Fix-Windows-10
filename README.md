@@ -13,6 +13,9 @@ To Fix the sound and limit FPS to 60:
 
 5. (Optional) To avoid seeing white texture shapes in game leave the Texture color depth at 16 bits and Antialiasing on off when configuring graphics options.
 
+# NB! Only for AMD CPUs USERS JPEG issues fix:
+6 Replace rlmfc.dll in C:\Program Files (x86)\Steam\steamapps\common\Max Payne with the one provided in the FOR AMD CPUs Fix folder in this repo
+
 # (Optional) Bonus maximize difficulty settings via registry
 0. Launch the game at least once and play the tutorial level for a bit.Exit
 1. Start Menu->Run and type in regedit. Press Enter. 

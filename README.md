@@ -16,6 +16,15 @@ To Fix the sound and limit FPS to 60:
 # NB! Only for AMD CPUs USERS JPEG issues fix:
 6 Replace rlmfc.dll in C:\Program Files (x86)\Steam\steamapps\common\Max Payne with the one provided in the FOR AMD CPUs Fix folder in this repo
 
+# NB! Dual Laptop GPU's ONLY!
+1. Donwload everything extract
+2. Copy all files from Reshade Dual GPU's Laptops folder C:\Program Files (x86)\Steam\steamapps\common\Max Payne 
+3. Go to your NVIDIA Control Panel>3D Settings>Global find the preferred GPU and set it to NVIDIA
+4. Run the MaxBatch bat file
+5. For sound fix just launch the C option and wait for the files to convert
+6. Type E to exit the script.
+7. Enjoy
+
 # (Optional) Bonus maximize difficulty settings via registry
 0. Launch the game at least once and play the tutorial level for a bit.Exit
 1. Start Menu->Run and type in regedit. Press Enter. 

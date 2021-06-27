@@ -11,7 +11,9 @@ To Fix the sound and limit FPS to 60:
 
 4. Type E to exit the script.
 
-5. (Optional) To avoid seeing white texture shapes in game leave the Texture color depth at 16 bits and Antialiasing on off when configuring graphics options.
+5. When launching Max Payne on Windows 11 or Windows 10 H121 in the Options select Enable Task Switching.
+
+6. (Optional) To avoid seeing white texture shapes in game leave the Texture color depth at 16 bits and Antialiasing on off when configuring graphics options.
 
 # NB! Only for AMD CPUs USERS JPEG issues fix:
 6 Replace rlmfc.dll in C:\Program Files (x86)\Steam\steamapps\common\Max Payne with the one provided in the FOR AMD CPUs Fix folder in this repo

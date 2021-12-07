@@ -1,0 +1,38 @@
+For Windows 10 1903
+
+1.Put all the files into the C:\Program Files (x86)\Steam\steamapps\common\Max Payne
+2.Run the MaxBatch bat file
+3.Use any of the options below,but for sound just launch the C one
+4.FPS fix just copy and paste the d3d8.dll into the C:\Program Files (x86)\Steam\steamapps\common\Max Payne directory
+
+Options:
+When you run the script you will presented with some of the following options, depending on status found.
+[C] - Convert game. This will convert the game .ras files that contain sounds. Backups are kept so you can restore later on.
+[M] - Convert mod(s). This will convert the mod .mpm files found. Backups are kept so you can restore later on.
+[B ] - Convert both game and the found mod(s). This will do both the above, with backups.
+[R] - Restore options. This will launch the restore menu.
+[A] - Restore all original files. Will restore both game and mods from the backup to the game directory. Only shown in restore menu.
+[G] - Restore original game files. Will restore the game .ras files from the backup to the game directory. Only shown in restore menu.
+[O] - Restore original mod files. Will restore the mod .mpm files from the backup to the game directory. Only shown in restore menu.
+[S] - Start analysis again. This restarts the analysis phase. All file detection is done over again. Useful if you updated the contents of the game directory, added more mods, or fixed missing files.
+[L] - Launch game. Will attempt to launch game if the file maxpayne.exe exists. If additional files are missing, this will be reported in the analysis phase, but as long as maxpayne.exe is there, launch will still be attempted. After launching the script will exit and create a shortcut on the desktop to itself if it did not exist already.
+[D] - Debug Level (0/1/2). Levels explained below, but please also read the 'Tips for debug option:' section. Pressing D will cycle through the debug options 0-2, so if you accidentally get at a level you don't want, just press D a couple of more times until you're back at the first level.
+
+    - Level 0 is off, stay here if you don't know about debugging.
+    - Level 1 will switch the script to verbose mode, so it comments on the file analysis and other phases. Meant for users with minor problems. Level 1 comments are also shown at higher debug levels.
+    - Level 2 will set sox to verbose and will show lots of info during a conversion phase. The conversion of each sound is documented.
+
+[E] - End. This will do guess what .
+
+
+
+Files:
+MaxBatch.bat
+maxpayne soundpatch(xxx).txt
+Rasmaker.exe
+Rl.dll
+Shortcut.exe
+Sox.exe
+
+Thanks to gimalaji_blake and Darkje 
+

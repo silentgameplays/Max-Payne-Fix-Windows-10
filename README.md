@@ -1,5 +1,5 @@
 # Max-Payne-Fix-Windows-10
-To Fix the sound and limit FPS to 60:
+# To Fix the sound and limit FPS to 60:
 
 0. Go to Control Panel>Programs>Programs and Features>Turn Windows Features on or off>Legacy Components>Enable Direct Play and .NET 3.5 Framework support
 
@@ -48,8 +48,10 @@ To Fix the sound and limit FPS to 60:
 5. Press C wait for files to convert then E
 6. Launch game
 
+# Added 60FPS support for 1080p Thirteen AG patch.
+1.Download and extract into your C:\Program Files (x86)\Steam\steamapps\common\Max Payne
 
 # Enjoy the game,credit goes to Darkje for the Sound Patch creation and ThirteenAG for the wrapper creation visit his website for more goodies:https://thirteenag.github.io/wfp!
 # Thanks goes to gimalaji_blake for setting it up,testing and configuring the wrapper to be recognized by the game and setiing the FPS limit.
 Enjoy!
-# gimalaji_blake
+# silentgameplayzz

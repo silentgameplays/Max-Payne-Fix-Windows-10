@@ -36,6 +36,6 @@ To Fix the sound and limit FPS to 60:
 
 
 # Enjoy the game,credit goes to Darkje for the Sound Patch creation and ThirteenAG for the wrapper creation visit his website for more goodies:https://thirteenag.github.io/wfp!
-# Thanks goes to silentgameplayz for setting it up,testing and configuring the wrapper to be recognized by the game and setiing the FPS limit.
+# Thanks goes to silentgameplayzz for setting it up,testing and configuring the wrapper to be recognized by the game and setiing the FPS limit.
 # Enjoy!
-# silentgameplayz
+# silentgameplayzz

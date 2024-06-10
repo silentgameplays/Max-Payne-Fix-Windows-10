@@ -57,6 +57,25 @@
 4. Launch Game at least once!
 5. Copy and paste the rest of the MaxPayne 60 FPS Lock and 1080p Patch folder 6 files: d3d8.dll d3d9.dll d3d9.ini global.ini MaxPayne.WidescreenFix.asi MaxPayne.WidescreenFix.ini into Max Payne folder C:\Program Files (x86)\Steam\steamapps\common\Max Payne
 
+# Max Payne Fix Linux With Thirteen AG Patch and 60 FPS lock
+
+1. Install Mangohud for your distro
+
+2. Download Max Payne Fix Linux from here or from Thirteen AG Repositiory 
+https://thirteenag.github.io/wfp#mp1
+
+3. Go to Steam>Max Payne>Compatibility>General>Launch Options
+
+4. WINEDLLOVERRIDES="d3d8=n,b" MANGOHUD_CONFIG="fps_limit=60,no_display" mangohud %command% -skipstartup
+
+5. If you are on AMD CPU replace rlmfc.dll in Max Payne directory with the one provided in the FOR AMD CPUs Fix folder in this repo or download it here
+
+https://drive.google.com/file/d/1nPUgYVdj03J1jI0CONMrPit0snFN9P4_/view
+
+6. Enjoy the game
+
+7. At the time of testing the Steam versin of Proton 9.0.1
+
 # Enjoy the game,credit goes to Darkje for the Sound Patch creation and ThirteenAG for the wrapper creation visit his website for more goodies:https://thirteenag.github.io/wfp!
 # Thanks goes to silentgamepls for setting it up,testing and configuring the wrappers to be recognized by the game and setting the FPS limit.
 # Enjoy!
